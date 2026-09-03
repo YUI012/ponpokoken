@@ -1,0 +1,283 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --bg: #fafafa;
+  --text: #111;
+  --muted: #717171;
+  --line: #e8e8e8;
+  --surface: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans JP, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  width: min(760px, 100% - 28px);
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid var(--line);
+  justify-content: space-between;
+  align-items: center;
+  width: min(760px, 100% - 28px);
+  margin: 0 auto;
+  padding: 18px 0;
+  display: flex;
+}
+
+.brand {
+  letter-spacing: -.02em;
+  font-weight: 800;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.hero {
+  padding: 76px 0 42px;
+}
+
+.hero.compact {
+  padding-bottom: 26px;
+}
+
+.overline, .label, .sectionTitle {
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+h1 {
+  letter-spacing: -.055em;
+  margin: 0;
+  font-size: clamp(44px, 10vw, 72px);
+  line-height: 1.05;
+}
+
+h2 {
+  letter-spacing: -.03em;
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.heroText {
+  max-width: 620px;
+  color: var(--muted);
+  margin: 20px 0 0;
+}
+
+.shortest {
+  margin: 18px 0 0;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.back {
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.listSection, .routeSection, .detailSection, .nextSection {
+  padding: 30px 0;
+}
+
+.certList {
+  border-top: 1px solid var(--line);
+}
+
+.certRow, .articleRow, .nextRow {
+  border-bottom: 1px solid var(--line);
+  background: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 19px 2px;
+  display: flex;
+}
+
+.certRow strong {
+  font-size: 20px;
+  display: block;
+}
+
+.certRow div > span {
+  color: var(--muted);
+  font-size: 12px;
+  display: block;
+}
+
+.rightMeta {
+  text-align: right;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.rightMeta span {
+  font-weight: 700;
+  color: var(--text) !important;
+  font-size: 13px !important;
+}
+
+.noteBlock, .careerAd, .disclosure {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 34px;
+  padding: 22px 0;
+}
+
+.noteBlock p:last-child, .disclosure p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.steps {
+  border-top: 1px solid var(--line);
+}
+
+.step {
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  padding: 24px 0;
+  display: grid;
+}
+
+.stepNo {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.step p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.buyButton {
+  color: #fff;
+  background: #111;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 0 18px;
+  font-weight: 800;
+  display: inline-flex;
+}
+
+.articleList {
+  border-top: 1px solid var(--line);
+}
+
+.articleRow span {
+  max-width: 90%;
+}
+
+.nextRow {
+  font-weight: 800;
+}
+
+.adSlot {
+  text-align: center;
+  min-height: 96px;
+  color: var(--muted);
+  border: 1px dashed #bbb;
+  place-content: center;
+  gap: 4px;
+  margin-top: 14px;
+  padding: 18px;
+  display: grid;
+}
+
+.adSlot strong {
+  color: var(--text);
+}
+
+.empty {
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding: 24px 0;
+}
+
+.disclosure {
+  gap: 14px;
+  font-size: 12px;
+  display: flex;
+}
+
+.disclosure strong {
+  flex: none;
+}
+
+.footer {
+  color: var(--muted);
+  padding: 48px 0 60px;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .hero {
+    padding: 52px 0 28px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .certRow {
+    align-items: flex-start;
+  }
+
+  .rightMeta {
+    gap: 10px;
+  }
+
+  .step {
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+  }
+
+  .buyButton {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app_globals_0yg4wg8.css.map*/
