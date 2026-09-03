@@ -1,5 +1,4 @@
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "ぽんぽこ｜IT資格を最短で",
@@ -10,8 +9,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <body>{children}</body>
-
-      <GoogleAnalytics gaId="G-P3FCT4RNBF" />
     </html>
   );
 }
